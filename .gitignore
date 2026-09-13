@@ -1,0 +1,6 @@
+*.exe
+*.db
+__pycache__/
+.venv/
+*.user
+*.autosave
