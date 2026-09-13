@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Личный кабинет — запись на приём</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="side">
+      <div class="who">Кот Стёпа</div>
+      <a class="active" href="cabinet.html">Запись на приём</a>
+      <a href="#">История болезни</a>
+      <a href="#">Чат с врачом</a>
+    </aside>
+    <main class="main">
+      <p class="step">1. Выберите дату</p>
+      <div class="cal">
+        <div class="cal-head"><span>Май 2026</span><span>▴ ▾</span></div>
+        <div class="cal-grid">
+          <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+          <span></span><span></span><span></span><span></span><span>1</span><span class="on">2</span><span>3</span>
+          <span>4</span><span>5</span><span>6</span><span>7</span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <p class="step">2. Выберите время</p>
+      <div class="times">
+        <button>09:00</button><button>10:30</button><button>12:00</button>
+        <button class="sel">14:00</button><button>16:30</button><button>17:00</button>
+      </div>
+      <p class="step">3. Специалист</p>
+      <select class="wide">
+        <option>Терапевт — Волков А.Д.</option>
+        <option>Хирург — Иванова А.С.</option>
+      </select>
+      <button class="btn-full-black">Записаться на приём</button>
+    </main>
+    <aside class="right">
+      <h2>История записей</h2>
+      <div class="hist">15.04.2026 — осмотр<br>Врач: Волков А.Д.</div>
+      <div class="hist">02.03.2026 — прививка<br>Врач: Соколова И.М.</div>
+      <h2>Поддержка</h2>
+      <div class="chat">
+        <div>Привет! Есть вопросы?</div>
+        <div style="text-align:right;margin-top:8px;">Где посмотреть анализы?</div>
+        <input placeholder="Напишите вопрос...">
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

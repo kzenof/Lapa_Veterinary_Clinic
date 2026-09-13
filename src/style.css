@@ -1,0 +1,64 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; background: #fff; color: #111; }
+a { color: #111; }
+.center-page { min-height: 100%; display: flex; align-items: center; justify-content: center; padding: 40px 16px; }
+.auth { width: 420px; text-align: center; }
+.auth h1 { font-size: 16px; font-weight: 400; margin-bottom: 36px; }
+.field { margin-bottom: 18px; text-align: center; }
+.field label { display: block; font-size: 13px; margin-bottom: 8px; }
+.field input, .field select {
+  width: 100%; height: 36px; border: none; background: #e6e6e6;
+  padding: 0 10px; font-size: 13px; text-align: center; outline: none;
+}
+.hint { font-size: 12px; margin: 18px 0 16px; }
+.btn-black {
+  display: inline-block; min-width: 220px; height: 40px; line-height: 40px;
+  background: #000; color: #fff; border: none; cursor: pointer; font-size: 14px; text-decoration: none;
+}
+.btn-blue {
+  display: block; width: 100%; height: 36px; background: #2f80ed; color: #fff;
+  border: none; cursor: pointer; font-size: 13px;
+}
+.checks { margin-top: 22px; text-align: left; display: inline-block; font-size: 13px; }
+.checks label { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
+.links { margin-top: 22px; font-size: 13px; line-height: 1.6; }
+.layout { display: flex; min-height: 100%; }
+.side { width: 168px; background: #1c1c1c; color: #fff; padding: 18px 0; flex-shrink: 0; }
+.side a, .side .who {
+  display: block; color: #fff; text-decoration: none; padding: 10px 16px; font-size: 13px;
+}
+.side .who { font-weight: 600; margin-bottom: 10px; }
+.side a.active { background: #fff; color: #111; }
+.main { flex: 1; padding: 22px 28px; }
+.right { width: 280px; padding: 22px 18px; border-left: 1px solid #eee; }
+h2 { font-size: 15px; font-weight: 600; margin-bottom: 14px; }
+.step { margin: 22px 0 10px; font-size: 14px; }
+.cal {
+  width: 220px; background: #111; color: #fff; border-radius: 8px; padding: 10px 12px; font-size: 12px;
+}
+.cal top, .cal-head { display: flex; justify-content: space-between; margin-bottom: 8px; }
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; }
+.cal-grid span { padding: 4px 0; }
+.cal-grid .on { background: #2f80ed; border-radius: 50%; }
+.times { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid #ddd; }
+.times button { border: 1px solid #eee; background: #fff; padding: 12px; cursor: pointer; }
+.times button.sel { background: #2f80ed; color: #fff; border-color: #2f80ed; }
+select.wide { width: 100%; height: 34px; background: #f2f2f2; border: 1px solid #ddd; padding: 0 8px; }
+.btn-full-black { width: 100%; height: 38px; background: #000; color: #fff; border: none; margin-top: 16px; cursor: pointer; }
+.hist { font-size: 13px; line-height: 1.5; margin-bottom: 16px; }
+.chat { background: #f3f3f3; padding: 12px; min-height: 120px; font-size: 13px; }
+.chat input { width: 100%; margin-top: 10px; border: none; background: #fff; height: 28px; padding: 0 8px; }
+.queue { border-top: 1px solid #eee; }
+.q-row { display: flex; justify-content: space-between; padding: 12px 8px; border-bottom: 1px solid #eee; font-size: 14px; }
+.q-row.now { background: #f2f2f2; }
+.form label { display: block; font-size: 12px; margin: 10px 0 4px; color: #444; }
+.form input, .form select { width: 100%; height: 32px; background: #f2f2f2; border: none; padding: 0 8px; }
+.box { background: #f2f2f2; min-height: 56px; padding: 8px; margin-bottom: 12px; font-size: 13px; color: #777; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font-weight: 400; color: #666; padding: 8px; border-bottom: 1px solid #eee; }
+td { padding: 10px 8px; border-bottom: 1px solid #f2f2f2; }
+.online { color: #2e7d32; }
+.offline { color: #999; }
+.btn-dark { width: 100%; height: 36px; background: #222; color: #fff; border: none; margin: 10px 0 8px; cursor: pointer; }
+.btn-red { width: 100%; height: 36px; background: #c0392b; color: #fff; border: none; cursor: pointer; }
+.center-cal { display: flex; justify-content: center; padding: 48px 0; }

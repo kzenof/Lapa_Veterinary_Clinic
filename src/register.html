@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация пользователя</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center-page">
+    <form class="auth" action="login-client.html">
+      <h1>Зарегистрироваться как пользователь</h1>
+      <div class="field">
+        <label>Фамилия Имя Отчество*</label>
+        <input value="Иванов Иван Иванович">
+      </div>
+      <div class="field">
+        <label>Номер телефона*</label>
+        <input value="+7 (900) 123-45-67" placeholder="+7 (XXX) XXX-XX-XX">
+      </div>
+      <div class="field">
+        <label>Пароль*</label>
+        <input type="password">
+      </div>
+      <div class="field">
+        <label>Подтверждение пароля*</label>
+        <input type="password">
+      </div>
+      <div class="field">
+        <label>Эл. почта</label>
+        <input type="email">
+      </div>
+      <p class="hint">* — обязательно для заполнения</p>
+      <button class="btn-black" type="submit">Зарегистрироваться</button>
+      <div class="checks">
+        <label><input type="checkbox" checked> согласен на обработку персональных данных</label>
+        <label><input type="checkbox"> согласен на получение рекламных предложений</label>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

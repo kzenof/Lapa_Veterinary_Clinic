@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистратура — новая запись</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="side">
+      <div class="who">ВЕТКЛИНИКА</div>
+      <a class="active" href="registrar.html">Новая запись</a>
+      <a href="#">Все пациенты</a>
+      <a href="#">Расписание</a>
+    </aside>
+    <main class="main">
+      <p class="center-cal" style="display:block;text-align:center;padding-top:40px;">Выберите дату приёма</p>
+      <div class="center-cal">
+        <div class="cal">
+          <div class="cal-head"><span>Май 2026</span><span>▴ ▾</span></div>
+          <div class="cal-grid">
+            <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+            <span></span><span></span><span></span><span></span><span>1</span><span class="on">2</span><span>3</span>
+            <span>4</span><span>5</span><span>6</span><span>7</span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside class="right">
+      <h2>Детали записи</h2>
+      <div class="form">
+        <p style="margin:8px 0 4px;font-size:13px;">Данные владельца</p>
+        <label>ФИО владельца</label>
+        <input value="Иванов Иван Иванович">
+        <label>Номер телефона</label>
+        <input value="+7 (999) 000-00-00">
+        <label>Электронная почта</label>
+        <input value="example@mail.ru">
+        <p style="margin:16px 0 4px;font-size:13px;">Данные пациента</p>
+        <label>Кличка</label>
+        <input value="Барсик">
+        <label>Вид / порода</label>
+        <input value="Кот / британский">
+        <label>Врач</label>
+        <select><option>Волков А.Д.</option><option>Иванова А.С.</option></select>
+        <label>Время</label>
+        <input value="14:00">
+        <button class="btn-blue" style="margin-top:14px;">Подтвердить запись</button>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

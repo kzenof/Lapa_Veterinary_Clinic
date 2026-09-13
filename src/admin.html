@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>CORE_ADMIN_v1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="side">
+      <div class="who">CORE_ADMIN_v1</div>
+      <a class="active" href="admin.html">Пользователи</a>
+      <a href="#">Логи системы</a>
+      <a href="#">Бэкап БД</a>
+      <a href="#">Настройки сети</a>
+    </aside>
+    <main class="main">
+      <h2>Управление персоналом</h2>
+      <table>
+        <tr><th>ID</th><th>Логин</th><th>Роль</th><th>Статус</th></tr>
+        <tr>
+          <td>1</td><td>anton</td><td>Админ</td><td class="online">Online</td>
+        </tr>
+        <tr>
+          <td>2</td><td>volkov_doc</td><td>Врач</td><td class="offline">Offline</td>
+        </tr>
+        <tr>
+          <td>3</td><td>ivanova_reg</td><td>Регистратор</td><td class="offline">Offline</td>
+        </tr>
+      </table>
+    </main>
+    <aside class="right">
+      <h2 style="text-align:center;">Данные работника</h2>
+      <div class="form">
+        <label>Логин</label>
+        <input value="volkov_doc">
+        <label>Новый пароль</label>
+        <input type="password">
+        <label>Уровень доступа (Роль)</label>
+        <select>
+          <option>Врач</option>
+          <option>Админ</option>
+          <option>Регистратор</option>
+        </select>
+        <button class="btn-dark">Сохранить изменения</button>
+        <button class="btn-red">Заблокировать</button>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
