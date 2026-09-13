@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Вход сотрудника</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center-page">
+    <form class="auth" id="staff-login">
+      <h1>Войти в систему</h1>
+      <div class="field">
+        <label>Логин</label>
+        <input>
+      </div>
+      <div class="field">
+        <label>Пароль</label>
+        <input type="password">
+      </div>
+      <div class="field">
+        <label>Роль</label>
+        <select id="role">
+          <option value="registrar.html">Регистратор</option>
+          <option value="doctor.html">Врач</option>
+          <option value="admin.html">Администратор</option>
+        </select>
+      </div>
+      <button class="btn-black" type="submit">Войти</button>
+      <p class="hint">При утрате логина или пароля обратитесь к системному администратору</p>
+    </form>
+  </div>
+  <script>
+    document.getElementById('staff-login').onsubmit = function (e) {
+      e.preventDefault();
+      location.href = document.getElementById('role').value;
+    };
+  </script>
+</body>
+</html>
